@@ -22,16 +22,15 @@ color bg_color;
 
 void setup() {
   size(800, 800);
-  //fullScreen();
   frameRate(30);
   noStroke();
   bg_color = randomColor2();
   background(bg_color);
   
   em.add(new PVector(-d, -d)); //botom right corner 0
-  em.add(new PVector(d, -d));  //bottom left corner 1 
+  em.add(new PVector(d, -d)); //bottom left corner 1 
   em.add(new PVector(-d, d)); //top right 2
-  em.add(new PVector(d, d));// top left 3
+  em.add(new PVector(d, d)); // top left 3
 
   for (int i = 0; i<=height; i+=number) {
     for (int j = 0; j<=width; j+=number) {
