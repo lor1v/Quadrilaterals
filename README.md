@@ -1,2 +1,2 @@
 # Quadrilaterals
-Small processing project
+Small Processing project
