@@ -1,2 +1,2 @@
 # Quadrilaterals
-Small Processing project
+Small Processing project: quadrilaterals generate and are smoothly animated
