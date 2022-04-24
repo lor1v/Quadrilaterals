@@ -38,7 +38,7 @@ class poly {
       d2.sub(em.get(1).copy().normalize().mult(grow_time));
     }
   }
-  float dis = 10; //when to stop shrinking/growing (barem ko gap)
+  float dis = 10; //when to stop shrinking/growing
   void check_size() {
     if (PVector.sub(a2.copy(), c2.copy()).mag()<=dis || b2.copy().sub(d2.copy()).mag()<=dis || a2.copy().sub(d2.copy()).mag()<=dis || a2.copy().sub(c2.copy()).mag()<=dis || b2.copy().sub(c2.copy()).mag()<=dis || c2.copy().sub(d2.copy()).mag()<=dis) {
       grow = true;
@@ -48,7 +48,7 @@ class poly {
     }
   }
 
-  float n = 50; // 100 je kul ako je width of one 100
+  float n = 50; // 100 if number=100
   void check_size_time() {
     if (n<0) {
       grow = true;
@@ -63,10 +63,10 @@ class poly {
     animating=true;
 
     if (an>0) {
-      grow = true; //aaaaaaa
+      grow = true; 
     }
     if (an<=0) {
-      grow = false; //obrni
+      grow = false; 
     }
 
     if (an>-base_an) {
@@ -79,7 +79,7 @@ class poly {
 
   void check_animation(float i) {
     //circular
-     //if ((abs(a.copy().mag()-i)<10 || abs(sqrt(sq(width)*2)-a.copy().mag()-i)<100) && !animating){
+    //if ((abs(a.copy().mag()-i)<10 || abs(sqrt(sq(width)*2)-a.copy().mag()-i)<100) && !animating){
     //linear
     if (abs(a.copy().x-i)< 10 && !animating) {
       an=base_an;
