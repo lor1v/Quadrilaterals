@@ -2,7 +2,7 @@ ArrayList <PVector> points = new ArrayList<PVector>();
 ArrayList<PVector> em = new ArrayList<PVector>();
 ArrayList<poly> quads = new ArrayList<poly>();
 
-PVector one = new PVector(5, 5); //randomness of points / 100 je kul
+PVector one = new PVector(5, 5); //randomness of points / 100 
 
 int number = 50; // width of one
 float d =10; // gap
@@ -34,7 +34,7 @@ void setup() {
 
   for (int i = 0; i<=height; i+=number) {
     for (int j = 0; j<=width; j+=number) {
-      if (j==0 || i ==0 || j==height || i ==width) {
+      if (j==0 || i==0 || j==height || i==width) {
         points.add(new PVector(j, i));
       } else {
         points.add(new PVector(j, i).add(one.copy().rotate(random(0, TWO_PI))));
@@ -42,7 +42,6 @@ void setup() {
     }
   }
   createQuads();
-  //hide_all();
 }
 
 
